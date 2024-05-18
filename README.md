@@ -1,7 +1,32 @@
-# Vue 3 + Vite
+## Executando o projeto localmente
+#### Instruções de instalação
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Certifique-se de ter o Yarn instalado em sua máquina:
 
-## Recommended IDE Setup
+```bash
+npm install --global yarn
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+Clone o projeto do repositório do Github:
+
+```bash
+# Para conexões https:
+git clone https://github.com/develis/hacka4all.git
+
+# Para conexões ssh:
+git clone git@github.com:develis/hacka4all.git
+```
+
+Após concluir o clone do projeto, instale as dependências e o node_modules:
+
+```bash
+yarn install
+```
+
+Para executar o projeto localmente:
+
+```bash
+yarn dev
+```
+
+Para visualizá-lo, abra o navegador e digite: `localhost:5173/`. A numeração da porta pode variar dependendo da sua rede.
