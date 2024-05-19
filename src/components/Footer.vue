@@ -60,7 +60,7 @@
           <li v-for="link in navLinks" :key="link.name">
             <a
               :href="link.href"
-              class="nav__links font-alata text-[18px] text-white transition-all ease-out md:text-[15px]"
+              class="nav__links font-alata font-bold text-[18px] text-white transition-all ease-out md:text-[15px]"
               >{{ link.name }}</a
             >
           </li>
@@ -78,7 +78,7 @@
               class="nav__links transition-all ease-out"
             >
               <img
-                :src="`/assets/${link.src}.svg`"
+                :src="`./assets/${link.src}.svg`"
                 :alt="link.name"
                 class="h-6 w-6"
               />

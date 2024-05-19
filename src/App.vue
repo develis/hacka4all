@@ -30,10 +30,6 @@
 
 <style>
   .background {
-    background: linear-gradient(
-      45deg,
-      rgba(255, 0, 150, 0.5),
-      rgba(0, 204, 255, 0.5)
-    );
+    background: linear-gradient(45deg, #5b0000, #400000);
   }
 </style>
