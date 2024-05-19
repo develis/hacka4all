@@ -25,7 +25,7 @@ O projeto tem como objetivo propor um diagnóstico empresarial, oferecer cursos 
 
 ![screenshot](./public/assets/screenshot.png)
 
-### Links
+### Link
 
 - [Site](https://develis.github.io/hacka4all/)
 
