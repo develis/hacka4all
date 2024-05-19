@@ -54,7 +54,7 @@
       </h3>
       <p class="text-xs italic">{{ subtitle }}</p>
     </div>
-    <div class="flex justify-center items-start gap-8">
+    <div class="flex flex-col md:flex-row justify-center items-start gap-8">
       <div class="flex flex-col items-center gap-2">
         <h4 class="px-3 text-xl font-josefin-sans text-center font-bold">
           {{ belowTitle }}
