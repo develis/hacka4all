@@ -12,31 +12,39 @@
         elements: [
           {
             id: 0,
-            percentage: '1.5%',
-            totalText: 'do total',
-            mainValue: '23',
-            description: 'gerentes de nações distintas',
+            img: 'person-1',
+            name: 'Elsa Ribeiro',
+            role: 'Analista de Sustentabilidade',
+            diversity: 'Preta, Trans, Indígena',
+            testimonial:
+              'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione accusamus nulla aliquam vitae atque excepturi totam vel architecto, sapiente voluptatibus quas, ad amet earum porro nam quis saepe ut assumenda?',
           },
           {
             id: 1,
-            percentage: '2.0%',
-            totalText: 'do time',
-            mainValue: '30',
-            description: 'gerentes de indústrias diferentes',
+            img: 'person-2',
+            name: 'Maria Oliveia',
+            role: 'Vendas',
+            diversity: 'LGBTQIA+, Gestor, Mulher, Preta',
+            testimonial:
+              'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione accusamus nulla aliquam vitae atque excepturi totam vel architecto, sapiente voluptatibus quas, ad amet earum porro nam quis saepe ut assumenda?',
           },
           {
             id: 2,
-            percentage: '2.5%',
-            totalText: 'do time',
-            mainValue: '38',
-            description: 'gerentes mulheres',
+            img: 'person-3',
+            name: 'Olavo Silva',
+            role: 'Desginer',
+            diversity: 'PCD',
+            testimonial:
+              'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione accusamus nulla aliquam vitae atque excepturi totam vel architecto, sapiente voluptatibus quas, ad amet earum porro nam quis saepe ut assumenda?',
           },
           {
             id: 3,
-            percentage: '3.0%',
-            totalText: 'do time',
-            mainValue: '45',
-            description: 'contrataram gerentes de áreas diferentes',
+            img: 'person-4',
+            name: 'Mario Fernandes',
+            role: 'Vendedor de seguro',
+            diversity: 'Trans, Preto retinto',
+            testimonial:
+              'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione accusamus nulla aliquam vitae atque excepturi totam vel architecto, sapiente voluptatibus quas, ad amet earum porro nam quis saepe ut assumenda',
           },
         ],
         autoplayInterval: null,
@@ -55,7 +63,7 @@
         this.handleUserInteraction()
       },
       startAutoplay() {
-        this.autoplayInterval = setInterval(this.proximo, 3000)
+        this.autoplayInterval = setInterval(this.proximo, 9000)
       },
       stopAutoplay() {
         clearInterval(this.autoplayInterval)
@@ -76,14 +84,8 @@
 
 <template>
   <article
-    class="flex h-max w-full flex-col items-center justify-between rounded-md p-6 sm:h-[412px] sm:min-h-[444px] md:w-[352px] lg:w-[440px]"
+    class="flex h-max w-full flex-col items-center justify-between rounded-md p-6 sm:h-[470px] sm:min-h-[300px] md:w-[500px] lg:w-[780px] bg-white shadow"
   >
-    <p class="font-semibold text-xl font-josefin-sans">
-      Impactos na mudança de liderança
-    </p>
-    <span class="text-[10px] italic"
-      >BCG diversity and innovation survey, 2017 (n=1,681)</span
-    >
     <div class="w-full grow space-y-2">
       <div
         v-for="element in elements"
@@ -91,12 +93,29 @@
         :class="{ hidden: indexAtual !== element.id }"
         class="flex h-full min-h-[228px] w-full grow flex-col items-center justify-center space-y-4 transition-all duration-500 ease-in-out"
       >
-        <CircleElement
-          :percentage="element.percentage"
-          :totalText="element.totalText"
-          :mainValue="element.mainValue"
-          :description="element.description"
-        />
+        <div class="space-y-4 flex flex-col items-center justify-center gap-2">
+          <div class="rounded-full w-32 h-32 overflow-hidden shadow-lg">
+            <img
+              :src="`./assets/${element.img}.jpeg`"
+              alt="Pessoas"
+              class="object-cover w-full h-full"
+            />
+          </div>
+          <h3 class="text-2xl font-josefin-sans text-gray-900 font-medium">
+            {{ element.name }}
+          </h3>
+          <div>
+            <span
+              class="mr-2 p-3 px-5 bg-[#400000] text-white rounded-full text-sm"
+              >{{ element.role }}</span
+            >
+            <span
+              class="p-3 px-5 bg-[#881600] text-white rounded-full text-sm"
+              >{{ element.diversity }}</span
+            >
+          </div>
+          <p class="p-6 text-center">{{ element.testimonial }}</p>
+        </div>
       </div>
     </div>
     <div

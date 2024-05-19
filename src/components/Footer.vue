@@ -78,7 +78,7 @@
               class="nav__links transition-all ease-out"
             >
               <img
-                :src="`/assets/${link.src}.svg`"
+                :src="`./assets/${link.src}.svg`"
                 :alt="link.name"
                 class="h-6 w-6"
               />

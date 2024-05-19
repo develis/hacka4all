@@ -19,7 +19,7 @@
           },
           {
             num: '03',
-            text: 'Impacto na reputação e produtividade',
+            text: 'Impacto na produtividade, reputação e segurança',
           },
         ],
       }
@@ -48,7 +48,6 @@
           </li>
         </ul>
       </div>
-      <Slider />
     </div>
   </section>
 </template>

@@ -3,6 +3,7 @@
   import Hero from './components/Hero.vue'
   import Anama from './components/Anama.vue'
   import Service from './components/Service.vue'
+  import Consultants from './components/Consultants.vue'
   import Footer from './components/Footer.vue'
 
   export default {
@@ -12,6 +13,7 @@
       Hero,
       Anama,
       Service,
+      Consultants,
       Footer,
     },
   }
@@ -26,6 +28,7 @@
       <Hero />
       <Anama />
       <Service />
+      <Consultants />
       <Footer />
     </main>
   </div>

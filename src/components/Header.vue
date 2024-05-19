@@ -58,7 +58,7 @@
       >
         <a href="#home" class="w-2/4 shrink-0">
           <h1
-            class="title font-josefin-sans text-2xl font-bold text-white italic"
+            class="title mt-1 font-josefin-sans text-2xl font-bold text-white italic"
           >
             Oré
           </h1>
