@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --watch",
     "preview": "vite preview",
     "format": "prettier .  --write",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "watch": "^1.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
