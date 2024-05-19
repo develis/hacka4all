@@ -47,7 +47,7 @@
 <template>
   <header
     class="fixed z-20 w-full transition-colors duration-300"
-    :class="isScrolled ? 'bg-white/50' : 'bg-transparent'"
+    :class="isScrolled ? 'bg-black/50' : 'bg-transparent'"
   >
     <div class="mx-auto max-w-[1280px] flex items-center">
       <nav
@@ -58,7 +58,7 @@
       >
         <a href="#home" class="w-2/4 shrink-0">
           <h1
-            class="title font-josefin-sans text-2xl font-bold text-sky-900 italic"
+            class="title font-josefin-sans text-2xl font-bold text-white italic"
           >
             Oré
           </h1>
@@ -86,7 +86,7 @@
             <li v-for="link in navLinks" :key="link.name">
               <a
                 :href="link.href"
-                class="nav__links font-josefin-sans text-2xl font-bold uppercase text-sky-900 transition-all ease-out md:font-alata md:text-[15px] md:capitalize"
+                class="nav__links font-josefin-sans text-2xl font-bold uppercase text-white transition-all ease-out md:font-alata md:text-[15px] md:capitalize"
                 >{{ link.name }}</a
               >
             </li>
