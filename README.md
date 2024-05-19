@@ -25,7 +25,7 @@ O projeto tem como objetivo propor um diagnóstico empresarial, oferecer cursos 
 
 ![screenshot](./public/assets/screenshot.png)
 
-### Links
+### Link
 
 - [Site](https://develis.github.io/hacka4all/)
 
@@ -70,10 +70,10 @@ yarn dev
 
 Para visualizá-lo, abra o navegador e digite: `localhost:5173/`. A numeração da porta pode variar dependendo da sua rede.
 
+
 ## Equipe
 
 **Soulvers**
-
 - Elis
 - Ilá
 - Jamilson
