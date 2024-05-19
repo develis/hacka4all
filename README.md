@@ -1,4 +1,5 @@
 ## Executando o projeto localmente
+
 #### Instruções de instalação
 
 Certifique-se de ter o Yarn instalado em sua máquina:
