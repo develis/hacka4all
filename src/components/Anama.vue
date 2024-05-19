@@ -30,8 +30,10 @@
 </script>
 
 <template>
-  <section id="anama" class="py-24 w-full bg-brand-white">
-    <div class="mx-auto max-w-[1280px] flex items-center gap-14">
+  <section id="anama" class="px-4 xl:px-0 py-24 w-full bg-brand-white">
+    <div
+      class="mx-auto max-w-[1280px] flex items-center gap-14 flex-col xl:flex-row"
+    >
       <div class="space-y-10 w-2/4">
         <div>
           <h2 class="mb-2 text-5xl font-josefin-sans">Anãma</h2>

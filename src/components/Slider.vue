@@ -104,17 +104,21 @@
           <h3 class="text-2xl font-josefin-sans text-gray-900 font-medium">
             {{ element.name }}
           </h3>
-          <div>
+          <div
+            class="flex flex-col sm:flex-row gap-2 items-center justify-center"
+          >
             <span
-              class="mr-2 p-3 px-5 bg-[#400000] text-white rounded-full text-sm"
+              class="w-max mr-2 p-3 px-5 bg-[#400000] text-white rounded-full text-sm"
               >{{ element.role }}</span
             >
             <span
-              class="p-3 px-5 bg-[#881600] text-white rounded-full text-sm"
+              class="w-max p-3 px-5 bg-[#881600] text-white rounded-full text-sm"
               >{{ element.diversity }}</span
             >
           </div>
-          <p class="p-6 text-center">{{ element.testimonial }}</p>
+          <p class="lg:text-base text-sm p-6 text-center">
+            {{ element.testimonial }}
+          </p>
         </div>
       </div>
     </div>

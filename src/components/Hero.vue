@@ -6,8 +6,10 @@
 
 <template>
   <section id="home" class="h-screen flex flex-col items-center justify-center">
-    <div class="mb-10 flex flex-col items-center justify-center">
-      <h2 class="font-josefin-sans text-8xl font-bold mb-3 text-white/70">
+    <div class="px-4 xl:px-0 mb-10 flex flex-col items-center justify-center">
+      <h2
+        class="font-josefin-sans text-8xl font-bold mb-3 text-white/70 text-center"
+      >
         Juntos, aprendemos
       </h2>
       <p class="text-2xl max-w-[700px] text-center text-white/70">
