@@ -4,8 +4,8 @@
     data() {
       return {
         menuOpen: false,
-        hamburgerButton: '/assets/icon-hamburger.svg',
-        closeButton: '/assets/icon-close.svg',
+        hamburgerButton: './assets/icon-hamburger.svg',
+        closeButton: './assets/icon-close.svg',
         isScrolled: false,
         navLinks: [
           {
