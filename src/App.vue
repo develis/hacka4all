@@ -3,6 +3,7 @@
   import Hero from './components/Hero.vue'
   import Footer from './components/Footer.vue'
   import About from './components/About.vue'
+  import Indicator from './components/Indicator.vue'
 
   export default {
     name: 'App',
@@ -11,6 +12,7 @@
       Hero,
       About,
       Footer,
+      Indicator
     },
   }
 </script>
@@ -23,6 +25,7 @@
     <main>
       <Hero />
       <About />
+      <Indicator />
       <Footer />
     </main>
   </div>
