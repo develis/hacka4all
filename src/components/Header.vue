@@ -86,7 +86,7 @@
             <li v-for="link in navLinks" :key="link.name">
               <a
                 :href="link.href"
-                class="nav__links font-josefin-sans text-2xl font-medium uppercase text-white transition-all ease-out md:font-alata md:text-[15px] md:capitalize"
+                class="nav__links font-josefin-sans text-2xl font-bold uppercase text-white transition-all ease-out md:font-alata md:text-[15px] md:capitalize"
                 >{{ link.name }}</a
               >
             </li>
