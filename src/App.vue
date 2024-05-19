@@ -12,7 +12,7 @@
       Hero,
       About,
       Footer,
-      Indicator
+      Indicator,
     },
   }
 </script>
