@@ -7,21 +7,21 @@
           {
             src: 'icon-bar-chart',
             icon: 'gráfico',
-            text: 'Beneficio 1'
+            text: 'Beneficio 1',
           },
           {
             src: 'icon-handshake',
             icon: 'Parceria',
-            text: 'Beneficio 2'
+            text: 'Beneficio 2',
           },
           {
             src: 'icon-conection',
             icon: 'Conexão',
-            text: 'Beneficio 3'
-          }
-        ]
+            text: 'Beneficio 3',
+          },
+        ],
       }
-    }
+    },
   }
 </script>
 
@@ -42,7 +42,11 @@
           </p>
         </div>
         <ul class="space-y-4">
-          <li v-for="item in items" :key="item.icon" class="flex items-center gap-4">
+          <li
+            v-for="item in items"
+            :key="item.icon"
+            class="flex items-center gap-4"
+          >
             <div class="p-3 rounded-full bg-pink-200 w-max h-max">
               <img
                 :src="`./assets/${item.src}.png`"
