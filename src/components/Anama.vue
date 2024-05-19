@@ -1,10 +1,12 @@
 <script>
   import Slider from './Slider.vue'
+  import CircleElement from './CircleElement.vue'
 
   export default {
     name: 'AppAnama',
     components: {
       Slider,
+      CircleElement,
     },
     data() {
       return {
@@ -48,6 +50,15 @@
           </li>
         </ul>
       </div>
+      <CircleElement
+        title="Empresas com pontuações de diversidade"
+        subtitle="BCG diversity and innovation survey 2017 (n=1,687)"
+        below-percentage="26%"
+        below-title="Abaixo da média"
+        text="Receita média de inovação"
+        above-percentage="45%"
+        above-title="Acima da média"
+      />
     </div>
   </section>
 </template>

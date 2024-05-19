@@ -2,39 +2,85 @@
   export default {
     name: 'CircleElement',
     props: {
-      percentage: {
+      title: {
         type: String,
-        required: true,
+        default: '',
       },
-      totalText: {
+      subtitle: {
         type: String,
-        required: true,
+        default: '',
       },
-      mainValue: {
+      belowPercentage: {
         type: String,
-        required: true,
+        default: '',
       },
-      description: {
+      belowTitle: {
         type: String,
-        required: true,
+        default: '',
+      },
+      text: {
+        type: String,
+        default: '',
+      },
+      abovePercentage: {
+        type: String,
+        default: '',
+      },
+      aboveTitle: {
+        type: String,
+        default: '',
+      },
+    },
+    computed: {
+      belowPercentageStyle() {
+        return {
+          '--percentage': this.belowPercentage,
+        }
+      },
+      abovePercentageStyle() {
+        return {
+          '--percentage': this.abovePercentage,
+        }
       },
     },
   }
 </script>
 
 <template>
-  <div class="relative flex justify-center items-center w-58 h-58">
-    <div
-      class="absolute -top-8 -left-20 w-36 h-36 border-8 p-1 rounded-full flex flex-col justify-center items-center text-gray-900 bg-brand-white border-green-500"
-    >
-      <span class="text-green-500 text-4xl font-bold">{{ percentage }}</span>
-      {{ totalText }}
+  <div class="flex flex-col justify-center items-center gap-4 w-58 h-58">
+    <div class="mb-3 flex flex-col justify-center items-center">
+      <h3 class="text-2xl font-bold text-center font-josefin-sans">
+        {{ title }}
+      </h3>
+      <p class="text-xs italic">{{ subtitle }}</p>
     </div>
-    <div
-      class="w-56 h-56 p-2 rounded-full flex flex-col justify-center items-center gap-5 text-gray-900 border-8 border-red-500 text-center bg-brand-white"
-    >
-      <span class="text-red-500 text-6xl font-bold h-9">{{ mainValue }}</span>
-      <p>{{ description }}</p>
+    <div class="flex justify-center items-start gap-8">
+      <div class="flex flex-col items-center gap-2">
+        <h4 class="px-3 text-xl font-josefin-sans text-center font-bold">
+          {{ belowTitle }}
+        </h4>
+        <div
+          class="w-56 h-56 border-[20px] p-2 rounded-full flex flex-col justify-center items-center text-gray-900 bg-brand-white border-red-500"
+        >
+          <span class="text-red-500 text-4xl font-bold">{{
+            belowPercentage
+          }}</span>
+          <p class="mt-2 text-center text-sm">{{ text }}</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-2">
+        <h4 class="px-3 text-xl font-josefin-sans text-center font-bold">
+          {{ aboveTitle }}
+        </h4>
+        <div
+          class="w-64 h-64 border-[20px] p-2 rounded-full flex flex-col justify-center items-center gap-5 text-gray-900 border-green-500 text-center bg-brand-white"
+        >
+          <span class="text-green-500 text-6xl font-bold h-9">{{
+            abovePercentage
+          }}</span>
+          <p class="mt-2 text-center text-sm px-2">{{ text }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
