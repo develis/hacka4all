@@ -1,24 +1,24 @@
 <script>
   export default {
-    name: 'AppApp',
+    name: 'AppFooter',
     data() {
       return {
         navLinks: [
           {
-            name: 'Sobre',
-            href: '#sobre',
+            name: 'Anama',
+            href: '#anama',
           },
           {
-            name: 'Carreira',
-            href: '#carreira',
+            name: 'Faça parte',
+            href: '#faca-parte',
           },
           {
-            name: 'Eventos',
-            href: '#eventos',
+            name: 'Dados',
+            href: '#',
           },
           {
-            name: 'Contato',
-            href: '#contato',
+            name: 'Dashboard',
+            href: '#dashboard',
           },
         ],
         socialLinks: [
@@ -44,7 +44,7 @@
 </script>
 
 <template>
-  <footer class="w-full bg-brand-black py-10 grow">
+  <footer class="w-full bg-gray-900 py-10 grow">
     <div
       class="mx-auto flex max-w-[1280px] flex-col items-center gap-y-12 px-6 md:flex-row md:justify-between"
     >
@@ -60,7 +60,7 @@
           <li v-for="link in navLinks" :key="link.name">
             <a
               :href="link.href"
-              class="nav__links font-alata font-bold text-[18px] text-white transition-all ease-out md:text-[15px]"
+              class="nav__links font-alata font-medium text-[18px] text-white transition-all ease-out md:text-[15px]"
               >{{ link.name }}</a
             >
           </li>
@@ -78,7 +78,7 @@
               class="nav__links transition-all ease-out"
             >
               <img
-                :src="`./assets/${link.src}.svg`"
+                :src="`/assets/${link.src}.svg`"
                 :alt="link.name"
                 class="h-6 w-6"
               />

@@ -1,18 +1,18 @@
 <script>
   import Header from './components/Header.vue'
   import Hero from './components/Hero.vue'
+  import Anama from './components/Anama.vue'
+  import Service from './components/Service.vue'
   import Footer from './components/Footer.vue'
-  import About from './components/About.vue'
-  import Indicator from './components/Indicator.vue'
 
   export default {
     name: 'App',
     components: {
       Header,
       Hero,
-      About,
+      Anama,
+      Service,
       Footer,
-      Indicator,
     },
   }
 </script>
@@ -24,8 +24,8 @@
     <Header />
     <main>
       <Hero />
-      <About />
-      <Indicator />
+      <Anama />
+      <Service />
       <Footer />
     </main>
   </div>

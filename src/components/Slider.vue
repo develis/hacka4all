@@ -67,13 +67,9 @@
     },
     mounted() {
       this.startAutoplay()
-      window.addEventListener('click', this.handleUserInteraction)
-      window.addEventListener('keydown', this.handleUserInteraction)
     },
     beforeDestroy() {
       this.stopAutoplay()
-      window.removeEventListener('click', this.handleUserInteraction)
-      window.removeEventListener('keydown', this.handleUserInteraction)
     },
   }
 </script>

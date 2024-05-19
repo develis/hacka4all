@@ -2,7 +2,7 @@
   import Slider from './Slider.vue'
 
   export default {
-    name: 'AppAbout',
+    name: 'AppAnama',
     components: {
       Slider,
     },
@@ -28,7 +28,7 @@
 </script>
 
 <template>
-  <section class="py-24 w-full bg-brand-white">
+  <section id="anama" class="py-24 w-full bg-brand-white">
     <div class="mx-auto max-w-[1280px] flex items-center gap-14">
       <div class="space-y-10 w-2/4">
         <div>
