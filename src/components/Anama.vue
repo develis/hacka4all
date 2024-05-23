@@ -34,7 +34,7 @@
     <div
       class="mx-auto max-w-[1280px] flex items-center gap-14 flex-col xl:flex-row"
     >
-      <div class="space-y-10 w-2/4">
+      <div class="space-y-10 w-full md:w-2/4">
         <div>
           <h2 class="mb-2 text-5xl font-josefin-sans">Anãma</h2>
           <p>Comunidade, suporte, anonimato</p>
@@ -45,7 +45,7 @@
             :key="item.num"
             class="flex items-center gap-4"
           >
-            <div class="p-3 rounded-full bg-[#F3EFE0] w-max h-max">
+            <div class="p-2 xl:p-3 rounded-full bg-[#F3EFE0] w-max h-max">
               <img src="/assets/check.svg" alt="check" class="h-4 w-4" />
             </div>
             <p>{{ item.text }}</p>

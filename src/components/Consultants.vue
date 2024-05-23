@@ -15,7 +15,7 @@
       class="mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-7 text-gray-900"
     >
       <h2
-        class="mb-6 text-4xl font-josefin-sans text-center max-w-5xl font-bold"
+        class="px-4 md:px-0 mb-6 text-2xl xl:text-4xl font-josefin-sans text-center max-w-5xl font-bold"
       >
         Nossos consultores são especialistas do setor
       </h2>

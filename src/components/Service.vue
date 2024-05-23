@@ -10,7 +10,7 @@
       class="mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-5 text-[#124A6E]"
     >
       <h2
-        class="mb-2 text-4xl md:text-6xl font-josefin-sans text-center max-w-5xl"
+        class="px-4 mb-2 text-2xl md:text-4xl xl:text-6xl font-josefin-sans text-center max-w-5xl"
       >
         Capacitando empresas para diversidade e inclusão
       </h2>

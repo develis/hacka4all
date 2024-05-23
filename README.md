@@ -70,10 +70,10 @@ yarn dev
 
 Para visualizá-lo, abra o navegador e digite: `localhost:5173/`. A numeração da porta pode variar dependendo da sua rede.
 
-
 ## Equipe
 
 **Soulvers**
+
 - Elis
 - Ilá
 - Jamilson
